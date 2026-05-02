@@ -10,9 +10,7 @@ from typing import Any, Dict, Iterable, List, Optional, Sequence, Set
 import google.generativeai as ai
 
 # Prefer an environment variable, but fall back to the inline value for quick experiments.
-API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyAyku42Eh6bBZMCkPsvOgdYyvN8MbG1xBI")
-if not API_KEY:
-    raise RuntimeError("Gemini API key is not configured. Set GEMINI_API_KEY environment variable.")
+API_KEY = "YOUR_API_KEY"
 
 ai.configure(api_key=API_KEY)
 
